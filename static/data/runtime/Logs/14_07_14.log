@@ -8141,3 +8141,552 @@ SQL: INSERT INTO `cx_users` (`ID`,`user_nicename`,`user_pass`,`create_time`) VAL
 ERR: 1048:Column 'user_pass' cannot be null
  [ SQL语句 ] : INSERT INTO `cx_users` (`ID`,`user_nicename`,`user_pass`,`create_time`) VALUES ('','Jimmy',null,'2014-07-14 22:55:45')
 
+[ 2014-07-14T22:59:19+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/index/menuid/292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.005081s ]
+SQL: SELECT * FROM `cx_users` WHERE ( user_status=1 )  [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.007416s ]
+SQL: SELECT * FROM `cx_role`  [ RunTime:0.000615s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Use of undefined constant role_id - assumed 'role_id' D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 51 行.
+NOTIC: [8] Undefined index: remark D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 59 行.
+NOTIC: [8] Undefined variable: User D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2014-07-14T22:59:26+08:00 ] 127.0.0.1 /myweb/index.php/Admin/user/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.005110s ]
+SQL: SELECT * FROM `cx_role` WHERE ( status=1 )  [ RunTime:0.000607s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `cx_menu` [ RunTime:0.005138s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `id` = null )  [ RunTime:0.000501s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `parentid` = null ) AND ( `status` = 1 )  [ RunTime:0.000532s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\myweb\cxapp\Admin\Controller\AdminController.class.php 第 294 行.
+NOTIC: [8] Undefined variable: ID D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 44 行.
+NOTIC: [8] Undefined variable: user_nicename D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2014-07-14T23:04:36+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/index/menuid/292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001723s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.006194s ]
+SQL: SELECT * FROM `cx_users` WHERE ( user_status=1 )  [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.005824s ]
+SQL: SELECT * FROM `cx_role`  [ RunTime:0.000465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Use of undefined constant role_id - assumed 'role_id' D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 51 行.
+NOTIC: [8] Undefined index: remark D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 59 行.
+NOTIC: [8] Undefined variable: User D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2014-07-14T23:04:38+08:00 ] 127.0.0.1 /myweb/index.php/Admin/user/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.006443s ]
+SQL: SELECT * FROM `cx_role` WHERE ( status=1 )  [ RunTime:0.000659s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `cx_menu` [ RunTime:0.008068s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `id` = null )  [ RunTime:0.000674s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `parentid` = null ) AND ( `status` = 1 )  [ RunTime:0.000558s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\myweb\cxapp\Admin\Controller\AdminController.class.php 第 294 行.
+NOTIC: [8] Undefined variable: ID D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 44 行.
+NOTIC: [8] Undefined variable: user_nicename D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2014-07-14T23:04:45+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.005852s ]
+NOTIC: [2] md5() expects at least 1 parameter, 0 given D:\wamp\www\myweb\cxapp\Common\Think\Library\Think\Model.class.php 第 1001 行.
+SQL: INSERT INTO `cx_users` (`ID`,`user_nicename`,`user_pass`,`create_time`) VALUES ('','Jimmy',null,'2014-07-14 23:04:45') [ RunTime:0.000333s ]
+ERR: 1048:Column 'user_pass' cannot be null
+ [ SQL语句 ] : INSERT INTO `cx_users` (`ID`,`user_nicename`,`user_pass`,`create_time`) VALUES ('','Jimmy',null,'2014-07-14 23:04:45')
+
+[ 2014-07-14T23:55:37+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.005171s ]
+NOTIC: [2] md5() expects at least 1 parameter, 0 given D:\wamp\www\myweb\cxapp\Common\Think\Library\Think\Model.class.php 第 1001 行.
+
+[ 2014-07-14T23:55:44+08:00 ] 127.0.0.1 /myweb/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_menu` [ RunTime:0.006737s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 0 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001253s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 239 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000991s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 252 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001681s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 253 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001312s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 254 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000791s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 284 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000738s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 298 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000777s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 286 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001205s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 289 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001446s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 287 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001311s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 288 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000862s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 290 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000955s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 291 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000839s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 292 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000788s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 293 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000934s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 294 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000895s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 295 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000831s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 296 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000919s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 297 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001027s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 51 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001377s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 285 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001080s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 245 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000981s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 277 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000962s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 300 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001036s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 302 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001048s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 301 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000942s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 260 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001870s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 303 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000966s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 304 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001061s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 262 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.001302s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 264 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000972s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 268 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000896s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 305 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000900s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 265 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000912s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 270 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000959s ]
+SQL: SELECT * FROM `cx_menu` WHERE ( `parentid` = 299 ) AND ( `status` = 1 ) ORDER BY `listorder` ASC  [ RunTime:0.000856s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wamp\www\myweb\static\data\runtime\Cache\Admin\296178082f5784b4c1462886261c4508.php 第 44 行.
+NOTIC: [2] Division by zero D:\wamp\www\myweb\static\data\runtime\Cache\Admin\296178082f5784b4c1462886261c4508.php 第 44 行.
+NOTIC: [8] Use of undefined constant user_login - assumed 'user_login' D:\wamp\www\myweb\static\data\runtime\Cache\Admin\296178082f5784b4c1462886261c4508.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2014-07-14T23:55:44+08:00 ] 127.0.0.1 /myweb/index.php/Admin/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002414s ]
+NOTIC: [2048] Declaration of Admin\Controller\MainController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\MainController.class.php 第 11 行.
+NOTIC: [2] mysql_get_server_info(): Access denied for user ''@'localhost' (using password: NO) D:\wamp\www\myweb\cxapp\Admin\Controller\MainController.class.php 第 19 行.
+NOTIC: [2] mysql_get_server_info(): A link to the server could not be established D:\wamp\www\myweb\cxapp\Admin\Controller\MainController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002128s ]
+
+[ 2014-07-14T23:55:48+08:00 ] 127.0.0.1 /myweb/index.php/Admin/Rbac/index/menuid/291.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+NOTIC: [2048] Declaration of Admin\Controller\RbacController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\RbacController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.006133s ]
+SQL: SELECT * FROM `cx_role` ORDER BY `listorder` asc,`id` desc  [ RunTime:0.000736s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001460s ]
+
+[ 2014-07-14T23:55:49+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/index/menuid/292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001760s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.009193s ]
+SQL: SELECT * FROM `cx_users` WHERE ( user_status=1 )  [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.009276s ]
+SQL: SELECT * FROM `cx_role`  [ RunTime:0.000876s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000390s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000841s ]
+NOTIC: [8] Use of undefined constant role_id - assumed 'role_id' D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 51 行.
+NOTIC: [8] Undefined index: remark D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 59 行.
+NOTIC: [8] Undefined variable: User D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001718s ]
+
+[ 2014-07-14T23:55:50+08:00 ] 127.0.0.1 /myweb/index.php/Admin/user/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003167s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.011643s ]
+SQL: SELECT * FROM `cx_role` WHERE ( status=1 )  [ RunTime:0.001334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `cx_menu` [ RunTime:0.007404s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `id` = null )  [ RunTime:0.000753s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `parentid` = null ) AND ( `status` = 1 )  [ RunTime:0.001054s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\myweb\cxapp\Admin\Controller\AdminController.class.php 第 294 行.
+NOTIC: [8] Undefined variable: ID D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 44 行.
+NOTIC: [8] Undefined variable: user_nicename D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001649s ]
+
+[ 2014-07-14T23:55:58+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.005145s ]
+NOTIC: [2] md5() expects at least 1 parameter, 0 given D:\wamp\www\myweb\cxapp\Common\Think\Library\Think\Model.class.php 第 1001 行.
+
+[ 2014-07-14T23:57:27+08:00 ] 127.0.0.1 /myweb/index.php/Admin/Rbac/index/menuid/291.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+NOTIC: [2048] Declaration of Admin\Controller\RbacController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\RbacController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.006909s ]
+SQL: SELECT * FROM `cx_role` ORDER BY `listorder` asc,`id` desc  [ RunTime:0.000693s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2014-07-14T23:58:02+08:00 ] 127.0.0.1 /myweb/index.php/Admin/Rbac/index/menuid/291.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+NOTIC: [2048] Declaration of Admin\Controller\RbacController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\RbacController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.005156s ]
+SQL: SELECT * FROM `cx_role` ORDER BY `listorder` asc,`id` desc  [ RunTime:0.000837s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2014-07-14T23:58:06+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/index/menuid/292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.005736s ]
+SQL: SELECT * FROM `cx_users` WHERE ( user_status=1 )  [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.005649s ]
+SQL: SELECT * FROM `cx_role`  [ RunTime:0.000540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Use of undefined constant role_id - assumed 'role_id' D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 51 行.
+NOTIC: [8] Undefined index: remark D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 59 行.
+NOTIC: [8] Undefined variable: User D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001380s ]
+
+[ 2014-07-14T23:58:08+08:00 ] 127.0.0.1 /myweb/index.php/Admin/user/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.005993s ]
+SQL: SELECT * FROM `cx_role` WHERE ( status=1 )  [ RunTime:0.000611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `cx_menu` [ RunTime:0.005394s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `id` = null )  [ RunTime:0.000644s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `parentid` = null ) AND ( `status` = 1 )  [ RunTime:0.000565s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\myweb\cxapp\Admin\Controller\AdminController.class.php 第 294 行.
+NOTIC: [8] Undefined variable: ID D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 44 行.
+NOTIC: [8] Undefined variable: user_nicename D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2014-07-14T23:58:15+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.005116s ]
+NOTIC: [2] md5() expects at least 1 parameter, 0 given D:\wamp\www\myweb\cxapp\Common\Think\Library\Think\Model.class.php 第 1001 行.
+
+[ 2014-07-14T23:59:04+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/index/menuid/292.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.005462s ]
+SQL: SELECT * FROM `cx_users` WHERE ( user_status=1 )  [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.005521s ]
+SQL: SELECT * FROM `cx_role`  [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Use of undefined constant role_id - assumed 'role_id' D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 51 行.
+NOTIC: [8] Undefined index: remark D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 59 行.
+NOTIC: [8] Undefined variable: User D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\myweb\static\data\runtime\Cache\Admin\f6b73e0897bcfbd8d3b59759cdec8aa3.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2014-07-14T23:59:05+08:00 ] 127.0.0.1 /myweb/index.php/Admin/user/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_role` [ RunTime:0.005243s ]
+SQL: SELECT * FROM `cx_role` WHERE ( status=1 )  [ RunTime:0.000737s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `cx_menu` [ RunTime:0.006809s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `id` = null )  [ RunTime:0.000776s ]
+SQL: SELECT `id`,`action`,`app`,`model`,`parentid`,`data`,`type`,`name` FROM `cx_menu` WHERE ( `parentid` = null ) AND ( `status` = 1 )  [ RunTime:0.000686s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\myweb\cxapp\Admin\Controller\AdminController.class.php 第 294 行.
+NOTIC: [8] Undefined variable: ID D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 44 行.
+NOTIC: [8] Undefined variable: user_nicename D:\wamp\www\myweb\static\data\runtime\Cache\Admin\36f62432d6958ee8e4ec257a80d3884d.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001595s ]
+
+[ 2014-07-14T23:59:14+08:00 ] 127.0.0.1 /myweb/index.php/Admin/User/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::index() should be compatible with Admin\Controller\AdminController::index($_model = NULL, $_tpl = NULL, $map = Array) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::edit() should be compatible with Admin\Controller\AdminController::edit($_model = NULL, $id = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::add() should be compatible with Admin\Controller\AdminController::add($_model = NULL, $_tpl = NULL) D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+NOTIC: [2048] Declaration of Admin\Controller\UserController::delete() should be compatible with Admin\Controller\AdminController::delete($_model = NULL, $id = NULL, $field = 'is_deleted') D:\wamp\www\myweb\cxapp\Admin\Controller\UserController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `cx_users` [ RunTime:0.006218s ]
+NOTIC: [2] md5() expects at least 1 parameter, 0 given D:\wamp\www\myweb\cxapp\Common\Think\Library\Think\Model.class.php 第 1001 行.
+SQL: INSERT INTO `cx_users` (`ID`,`user_nicename`,`user_pass`,`create_time`) VALUES ('','jimmy',null,'2014-07-14 23:59:14') [ RunTime:0.000479s ]
+ERR: 1048:Column 'user_pass' cannot be null
+ [ SQL语句 ] : INSERT INTO `cx_users` (`ID`,`user_nicename`,`user_pass`,`create_time`) VALUES ('','jimmy',null,'2014-07-14 23:59:14')
+
