@@ -1,0 +1,45 @@
+* {margin:0; padding:0;}
+ul,li {list-style:none;}
+body {padding:2% 5%;}
+a:link {text-decoration:none; color:#000;}
+a:visited {color:#000;}
+.fr {float:right;}
+.clearfix:after {content:""; display:table; clear:both; height:0px; width:100%;}
+.blue {color:#0085c3; font-size:10px;}
+.praise_wrap {padding:10px; text-align:center;}
+.praise {display:inline-block; padding:5px 15px; color:#fff; background:#009ece;}
+.module_title {line-height:30px; padding-left:10px; font-size:14px; clear:both; color:#fff; background:#009ece;}
+.asking_form textarea {width:100%; box-sizing:border-box; -webkit-box-sizing:border-box; padding:1%; height:80px; border:1px solid #ddd; background:#f3f1ee;}
+.asking_form textarea {width:100%; box-sizing:border-box; -webkit-box-sizing:border-box; padding:1%; height:80px; border:1px solid #ddd; background:#f3f1ee;}
+.tr {text-align:right;}
+.tr input[type="button"] {width:68px; height:25px; background:#009ece; color:#fff; border:none;}
+.tr input[type="text"] {width:80px; height:25px; padding-left:2px; background:#f3f1ee; border:1px solid #ccc;}
+.asking_list {margin-top:10px;}
+.asking_title {line-height:28px; padding-left:10px; font-size:14px; color:#fff; background:#009ece;}
+.asking_content {padding:10px; margin-bottom:5px; font-size:12px; background:#f3f1ee;}
+.asking_content > header {margin-bottom:5px;}
+.asking_content .blue {font-size:14px;}
+.asking_content .identity {font-size:10px; color:#8c8a89;}
+.asking_content #time {float:right; font-size:8px;}
+
+/*.praise {text-align:center;}
+.praise a {display:inline-block; padding:10px 20px; border-radius:8px; border:1px solid #ccc;}
+
+.comment_wrap {padding-top:30px; background:url(/Public/images/mobile/general_module/comment_title.png) no-repeat;}
+.comment_list li {border-bottom:1px solid #ccc;}
+.comment_list li:first-child {border-top:1px solid #ccc;}
+.comment_list li > div {line-height:25px;}
+.name {color:#999999;}
+.content {font-size:12px;}
+
+.button {text-align:center; margin:10px 0px;}
+.button span {display:inline-block; width:40%; height:30px; line-height:30px; text-align:center; border:1px solid #ccc;}
+.button .more {border-radius:10px 0px 0px 10px;}
+.button .say_some {border-radius:0px 10px 10px 0px;}
+
+.edit {margin-top:10px; position:relative;}
+.edit:after {content:""; width:0px; height:0px; position:absolute; bottom:100%; right:20%; border-width:5px; border-style:solid; border-color:transparent transparent #ccc transparent;}
+.edit textarea {width:100%; height:60px; margin-bottom:10px; border:1px solid #ccc; box-shadow:0px 0px 20px #ddd inset; border-radius:8px;}
+.edit .edit_button {height:30px; padding:0px 10px; background:#fff; border:1px solid #ccc; border-radius:4px;}
+.edit .edit_name {width:100px; height:30px; border:1px solid #ccc; box-shadow:0px 0px 10px #ddd inset; border-radius:6px;}
+*/

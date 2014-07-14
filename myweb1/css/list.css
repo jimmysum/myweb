@@ -1,0 +1,27 @@
+@charset 'utf-8';
+* {margin:0px; padding:0px;}
+ul,li {list-style:none;}
+img {max-width:100%;}
+body {font-family:"Arial" "微软雅黑" "宋体"; letter-spacing:1px; padding-bottom:10px;}
+a {color:#4e4e4e; text-decoration:none;}
+a:visited {color:#4e4e4e;}
+/* flex布局自定义原子类 */
+.flex {display:-webkit-box; display:-ms-flex; display:-webkit-flex; display:flex;}
+.inline-flex {display:-webkit-inline-box; display:-ms-inline-flex; display:-webkit-flex; display:inline-flex;}
+.flex-vertical {-webkit-box-orient:vertical; -ms-flex-direction:column; -webkit-flex-direction:column; flex-direction:column;}
+.flex-hc {-webkit-box-pack:center; -ms-justify-content:center; -webkit-justify-content:center; justify-content:center;}
+.flex-vc {-webkit-box-align:center; -ms-align-items:center; -webkit-align-items:center; align-items:center;}
+.flex-hb {-webkit-box-pack:justify; -ms-justify-content:space-around; -webkit-justify-content:space-around; justify-content:space-around;}
+.flex-item {-webkit-box-flex:1; -ms-flex-grow:1; -webkit-flex-grow:1; flex-grow:1;}
+
+body {word-break:break-all;}
+.p10 {padding:10px;}
+.pt10 {padding-top:10px;}
+.pt5 {padding-top:5px;}
+.img-container {height:80px; min-width:80px; max-width:80px; overflow:hidden;}
+.img-container img {height:100%; width:100%;}
+.text-container {padding-left:15px;}
+.page {font-size:12px;}
+.comment {font-size:12px; float:right; font-style:italic;}
+.list li:nth-child(even) {background:#f2f2f2;}
+.load-more {text-align:center; line-height:38px; border:1px solid #ddd; width:95%; margin:0 auto; background:-webkit-linear-gradient(top,#fff,#e7e7e7);}

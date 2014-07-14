@@ -6,17 +6,17 @@
 return array(
 	'DB_TYPE'			 => 'mysql',
 	'DB_HOST'			 => 'localhost',
-	'DB_NAME'			 => 'cxphp_db',
+	'DB_NAME'			 => 'myweb',
 	'DB_USER'			 => 'root',
-	'DB_PWD'			 => '',
+	'DB_PWD'			 => '123456',
 	'DB_PORT'			 => '3306',
 	'DB_PREFIX'			 => 'cx_',
 	/* Default Module */
 	'DEFAULT_MODULE'	 => 'Home',
 	/* Data Auth Key */
-	"DATA_AUTH_KEY"		 => 'LuVBbSzkFMrAj0IKPN',
+	"DATA_AUTH_KEY"		 => '4gZIhtVS3Whs02voSE',
 	/* cookies Prefix */
-	"COOKIE_PREFIX"		 => '5rcclT_',
+	"COOKIE_PREFIX"		 => 'TmkxAe_',
 	/* Home Tpl Path */
 	'APP_TPL_PATH'		 => APP_ROOT . 'Home/',
 	/* CMF Config Path */

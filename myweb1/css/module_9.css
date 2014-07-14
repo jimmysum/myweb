@@ -1,0 +1,49 @@
+/** CSS reset **/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img,abbr,acronym{border:0;}
+ol,ul{list-style:none;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal; font-weight:normal;}
+caption,th{text-align:center;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+
+a:link {color:#fff; text-decoration:none;}
+a:visited {color:#fff;}
+body {background:#f6f4f5; font-family:"arial" "微软雅黑" "宋体"; font-size:16px; overflow:hidden;}
+img {max-width:100%;}
+b.vamb {display:inline-block; width:0px; height:100%; vertical-align:middle;}
+.swipe {overflow:hidden; visibility:hidden; position:relative;}
+.swipe-wrap {overflow:hidden; position:relative;}
+.swipe-wrap > li {float:left; width:100%; position:relative; text-align:center;}
+
+.swipe-menu {overflow:hidden; visibility:hidden; position:fixed; bottom:65px; left:0px; width:100%; background:rgba(0,0,0,0.4);}
+.menu-wrap {overflow:hidden; position:relative;}
+.menu-wrap > li {float:left; width:100%; position:relative; padding:8px 30px; -webkit-box-sizing:border-box; box-sizing:border-box;}
+.menu-wrap ul > li {float:left; overflow:hidden; text-align:center; width:25%; font-size:14px;}
+.menu-wrap ul > li span {display:block; margin:0 auto; margin-bottom:5px; color:#333333; width:45px; height:45px; border-radius:45px; border:2px solid #fff; background:no-repeat center center #fff; -webkit-background-size:100% auto; background-size:100% auto;}
+
+.guide {position:absolute; width:30px; height:100%; top:0px; text-align:center; line-height:86px; font-size:48px; color:#fff;}
+.previous {left:0px;}
+.next {right:0px;}
+
+.copyright {text-align:center; letter-spacing: 3px; line-height: 25px; font-size: 12px; color:#ead0b6; position:fixed; left:0px; bottom:0px; width:100%; z-index:990;}
+.copyright a:link {color:#fff;}
+.copyright a:visited {color:#fff;}
+.nav_button {height:45px;}
+.fixed {background:-webkit-gradient(linear,center top,center bottom,from(#081016),to(#03070c)); background:-ms-linear-gradient(top,#081016,#03070c); background:-webkit-linear-gradient(top,#081016,#03070c); background:linear-gradient(top,#081016,#03070c); position:fixed; width:100%; bottom:0px; left:0px;}
+.fixed ul {height:45px;}
+.fixed li {float:left; width:33.3%; text-align:center; height:45px;}
+.fixed li a {display:block; height:20px; line-height:20px; color:#fff; padding-top:25px; background-position:center 5px; background-repeat:no-repeat; -webkit-background-size:auto 20px; background-size:auto 20px;}
+.fixed li a:hover {color:#fff;}
+.fixed li a:visited {color:#fff;}
+.fixed li .bds_more {background-image:url(/Public/images/mobile/medical/nav_3.png); float:none; color:#fff; width:auto; margin:0px; text-indent:0em;}
+.fixed .nav-bmap {background-image:url(/Public/images/mobile/medical/nav_1.png);}
+.fixed .nav-tel {background-image:url(/Public/images/mobile/medical/nav_2.png);}
+body .bdshare_popup_box {background:none; border:none;}
+body .bdshare_popup_list li {height:38px; margin-left:0px; padding:0px;}
+body .bdshare_popup_list a {background:rgba(0,0,0,0.6); background-image:none; color:#fff; font-size:14px; line-height:18px; padding:10px 5px; text-align:center;}
+body .bdshare_popup_list a:hover {background:rgba(0,0,0,0.8); color:#fff;}
+body .bdshare_popup_list a:visited {color:#fff;}
+body .bdshare_popup_list {background:none; padding:0px;}
+.bdshare_popup_bottom {display:none;}
+.bdshare_popup_top {display:none;}
