@@ -4,7 +4,7 @@ namespace Admin\Controller;
 
 /**
  * 后台用户管理
- * 
+ *
  * @author Anyon <cxphp@qq.com>
  * @date 2014/04/06 20:08
  */
@@ -25,6 +25,7 @@ class UserController extends \Admin\Controller\AdminController {
 
 	function add() {
 		if (IS_POST) {
+		    var_dump($_POST);exit;
 			if (D('Users')->create()) {
 				if (D('Users')->add()) {
 					$this->success("添加成功！", U("user/index"));

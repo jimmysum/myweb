@@ -4,7 +4,7 @@ namespace Admin\Controller;
 
 /**
  * 系统后台管理公共控制器类
- * 
+ *
  * @author Anyon <cxphp@qq.com>
  * @date 2014/04/06 20:08
  */

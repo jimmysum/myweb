@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4
+-- version 3.4.10.1
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2014 年 07 月 14 日 16:02
--- 服务器版本: 5.6.12-log
--- PHP 版本: 5.4.12
+-- 生成日期: 2014 年 07 月 16 日 12:56
+-- 服务器版本: 5.5.20
+-- PHP 版本: 5.3.10
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 --
 -- 数据库: `myweb`
 --
-CREATE DATABASE IF NOT EXISTS `myweb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE `myweb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `myweb`;
 
 -- --------------------------------------------------------
@@ -260,9 +260,9 @@ CREATE TABLE IF NOT EXISTS `cx_nav_cat` (
 --
 
 INSERT INTO `cx_nav_cat` (`navcid`, `name`, `active`, `remark`) VALUES
-(1, '首页', 1, '首页'),
+(1, '首页', 0, '首页'),
 (2, '二级分类', 0, '二级分类'),
-(3, '分类', 0, '分类');
+(3, '分类', 1, '分类');
 
 -- --------------------------------------------------------
 
@@ -300,38 +300,22 @@ CREATE TABLE IF NOT EXISTS `cx_options` (
   `autoload` int(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- 转存表中的数据 `cx_options`
 --
 
 INSERT INTO `cx_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'site_options', '{"site_name":"\\u8fd9\\u4e2a\\u540d\\u79f0","site_host":"www.baidu.com","site_tpl":"default","site_icp":"","site_admin_email":"","site_tongji":"","site_copyright":"","site_seo_title":"","site_seo_keywords":"","site_seo_description":"","urlmode":"0","html_suffix":".html"}', 1);
+(2, 'site_options', '{"site_name":"\\u8fd9\\u4e2a\\u540d\\u79f0","site_host":"www.baidu.com","site_tpl":"default","site_icp":"ddd","site_admin_email":"dddd","site_tongji":"","site_copyright":"dddddd","site_seo_title":"","site_seo_keywords":"","site_seo_description":"","urlmode":"0","html_suffix":".html"}', 1);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `cx_postmeta`
+-- 表的结构 `cx_post`
 --
 
-CREATE TABLE IF NOT EXISTS `cx_postmeta` (
-  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
-  `meta_key` varchar(255) DEFAULT NULL,
-  `meta_value` longtext,
-  PRIMARY KEY (`meta_id`),
-  KEY `post_id` (`post_id`),
-  KEY `meta_key` (`meta_key`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- 表的结构 `cx_posts`
---
-
-CREATE TABLE IF NOT EXISTS `cx_posts` (
+CREATE TABLE IF NOT EXISTS `cx_post` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_author` bigint(20) unsigned DEFAULT '0',
   `post_keywords` varchar(150) NOT NULL,
@@ -353,15 +337,34 @@ CREATE TABLE IF NOT EXISTS `cx_posts` (
   KEY `type_status_date` (`wx_status`,`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
--- 转存表中的数据 `cx_posts`
+-- 转存表中的数据 `cx_post`
 --
 
-INSERT INTO `cx_posts` (`ID`, `post_author`, `post_keywords`, `post_date`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `wx_status`, `comment_status`, `post_modified`, `post_content_filtered`, `post_parent`, `post_type`, `post_mime_type`, `comment_count`, `smeta`) VALUES
+INSERT INTO `cx_post` (`ID`, `post_author`, `post_keywords`, `post_date`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `wx_status`, `comment_status`, `post_modified`, `post_content_filtered`, `post_parent`, `post_type`, `post_mime_type`, `comment_count`, `smeta`) VALUES
 (1, 1, '', '2014-07-14 22:38:54', '<p>无</p>', '无', '', 0, 1, 0, '0000-00-00 00:00:00', NULL, 0, NULL, '', 0, '{"thumb":"\\/myweb\\/static\\/data\\/upload\\/20140714\\/53c3eb7a46333.jpg","template":"page"}'),
-(2, 1, '', '2014-07-14 22:39:04', '<p>无</p>', '无', '', 0, 1, 0, '0000-00-00 00:00:00', NULL, 0, NULL, '', 0, '{"thumb":"\\/myweb\\/static\\/data\\/upload\\/20140714\\/53c3eb7a46333.jpg","template":"page"}');
+(2, 1, '', '2014-07-14 22:39:04', '<p>无</p>', '无', '', 0, 1, 0, '0000-00-00 00:00:00', NULL, 0, NULL, '', 0, '{"thumb":"\\/myweb\\/static\\/data\\/upload\\/20140714\\/53c3eb7a46333.jpg","template":"page"}'),
+(3, 1, 'jjjj', '2014-07-16 20:19:23', '<p>&nbsp;&nbsp;&nbsp;&nbsp;fasdfsadfsdfasd<br/></p>', 'biaoto', 'jjjjj', 1, 1, 1, '2014-07-14 19:57:00', NULL, 0, NULL, '', 0, '{"thumb":"\\/myweb\\/static\\/data\\/upload\\/20140716\\/53c668d7e22fd.jpg"}'),
+(4, 1, 'fadfasd', '2014-07-16 20:20:46', '<p>fasdfsadfsadfzxfxc</p>', 'biao', 'fasdfasdfsad', 1, 1, 1, '2014-07-14 20:20:00', NULL, 0, NULL, '', 0, '{"thumb":"\\/myweb\\/static\\/data\\/upload\\/20140716\\/53c66e0eb4822.jpg"}'),
+(5, 1, 'fsadf', '2014-07-16 20:39:06', '<p>fasdfasdf</p>', 'gasdfgas', 'fasdfas', 0, 0, 0, '2014-07-28 20:38:00', NULL, 0, NULL, '', 0, '{"thumb":false}');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `cx_postmeta`
+--
+
+CREATE TABLE IF NOT EXISTS `cx_postmeta` (
+  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `meta_key` varchar(255) DEFAULT NULL,
+  `meta_value` longtext,
+  PRIMARY KEY (`meta_id`),
+  KEY `post_id` (`post_id`),
+  KEY `meta_key` (`meta_key`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -458,7 +461,16 @@ CREATE TABLE IF NOT EXISTS `cx_term_relationships` (
   `status` int(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`tid`),
   KEY `term_taxonomy_id` (`term_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- 转存表中的数据 `cx_term_relationships`
+--
+
+INSERT INTO `cx_term_relationships` (`tid`, `object_id`, `term_id`, `listorder`, `status`) VALUES
+(1, 3, 0, 0, 1),
+(2, 4, 0, 0, 1),
+(3, 5, 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -543,7 +555,7 @@ CREATE TABLE IF NOT EXISTS `cx_users` (
 --
 
 INSERT INTO `cx_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `last_login_ip`, `last_login_time`, `create_time`, `user_activation_key`, `user_status`, `display_name`, `role_id`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', '', 'admin@admin.com', '', '127.0.0.1', '2014-07-14 22:13:06', '2014-07-14 10:12:45', '', 1, 'admin', 1);
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', '', 'admin@admin.com', '', '127.0.0.1', '2014-07-16 19:44:19', '2014-07-14 10:12:45', '', 1, 'admin', 1);
 
 -- --------------------------------------------------------
 

@@ -4,7 +4,7 @@ namespace Admin\Controller;
 
 /**
  * 内容内容管理
- * 
+ *
  * @author Anyon <cxphp@qq.com>
  * @date 2014/04/06 20:08
  */
@@ -218,7 +218,7 @@ class PostController extends \Admin\Controller\AdminController {
 			foreach ($objectids as $id) {
 				$IDs[] = $id["object_id"];
 			}
-			$IDs = join(",", $IDs);
+			$IDs = join(",", $IDs);var_dump($IDs);exit;
 			if (D("Post")->where("ID in ($IDs)")->save($data)) {
 				$this->success("取消审核成功！");
 			} else {
